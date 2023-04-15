@@ -1,0 +1,204 @@
+@font-face {
+    font-family: firstFont;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: secondFont;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    min-width: 1340px;
+    background-color: hsl(0, 0%, 86%);
+}
+
+/* ======================== Star Main Area ================ */
+
+.site{
+    text-align: start;
+    padding: 5rem 30rem;
+    margin-top: 5rem;
+}
+
+.app{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 8px 8px 150px 8px;
+}
+
+.info{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.birth{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.birth-span{
+    font-family: 'firstFont';
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.birth-input{
+    width: 170px;
+    font-size: 32px;
+    color: hsl(0, 0%, 8%);
+    padding: 0.2rem 1.2rem;
+    font-family: 'secondFont';
+    font-weight: 800;
+    border-radius: 8px;
+    letter-spacing: 0.2rem;
+    border: 1px solid hsl(0, 0%, 94%);
+    outline: hsl(0, 0%, 94%);
+    cursor: pointer;
+}
+
+.birth-input:focus{
+    border-color: hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.error{
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+.icon-btn{
+    background-color: hsl(259, 100%, 65%);
+    padding: 1rem;
+    float: right;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.icon-btn:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+hr{
+    margin-top: 2rem;
+    
+}
+
+.cal{
+    margin-top: 2rem;
+}
+
+.detail{
+    margin-top: 1rem;
+}
+
+.detail-span{
+    display: inline-block;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.time-span{
+    font-family: 'secondFont';
+    display: inline;
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    padding: 5px;
+  }
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+
+@media screen and (max-width: 1370px){
+
+    .site{
+        padding: 2rem 20rem ;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        min-width: 375px;
+    }
+
+    .site{
+        padding: 1rem;
+    }
+
+    .icon-btn{
+        position: absolute;
+        float: none;
+        margin-left: 30%;
+    }
+
+    .info{
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .cal{
+        padding-top: 2rem;
+    }
+
+    .birth-span{
+        font-size: 0.5rem;
+    }
+
+    .birth-input{
+        width: 90px;
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    
+}
+
+
+  /* ======================== End Media Querry Area ================ */

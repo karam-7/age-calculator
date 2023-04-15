@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <!-- ===========================START MAIN AREA======================= -->
+      <main class="site">
+        <h1 class="site-h1" style="display: none;">Age Calculator app</h1>
+        <div class="app">
+        <!-- ===========================START Info AREA======================= -->
+        <div class="info">
+          <div class="birth">
+            <span class="birth-span" id="daySpan">Day</span>
+            <input type="number" name="name" id="date" placeholder="DD" class="birth-input">
+            <span class="error" id="dayError">This field is required</span>
+            <span class="error" id="dayError1">Must be a valid day</span>
+          </div>
+          <div class="birth">
+            <span class="birth-span" id="monthSpan">Month</span>
+            <input type="number" name="month" id="month" placeholder="MM" class="birth-input">
+            <span class="error" id="monthError">This field is required</span>
+            <span class="error" id="monthError1">Must be a valid month</span>
+          </div>
+          <div class="birth">
+            <span class="birth-span" id="yearSpan">Year</span>
+            <input type="number" name="year" id="year" placeholder="YYYY" class="birth-input">
+            <span class="error" id="yearError">This field is required</span>
+            <span class="error" id="yearError1">Must be in the past</span>
+          </div>
+        </div>
+        <!-- ===========================End Info AREA======================= -->
+        <button class="icon-btn" id="btn"><img src="./assets/images/icon-arrow.svg" alt="icon" class="icon"></button>
+        <hr>
+        <div class="cal">
+        <div class="detail">
+          <span class="detail-span" id="year1">--</span>
+          <span class="time-span">years</span>
+        </div>
+        <div class="detail">
+          <span class="detail-span" id="month1">--</span>
+          <span class="time-span">months</span>
+        </div>
+        <div class="detail">
+          <span class="detail-span" id="day1">--</span>
+          <span class="time-span">days</span>
+        </div>
+      </div>
+      </div>
+      </main>
+      <!-- ===========================END MAIN AREA======================= -->
+      <!-- ================================START FOOTER AREA====================== -->
+        <footer class="foot">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="http://karam-portfolio.liveblog365.com" target="_blank">
+              KARAM SINGH</a
+            >
+          </footer>
+      <!-- ================================END FOOTER AREA========================= -->    
+    <script src="./script.js"></script>
+</body>
+</html>
