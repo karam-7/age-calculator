@@ -26,7 +26,7 @@ body{
 .site{
     text-align: start;
     padding: 5rem 30rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .app{
@@ -35,10 +35,19 @@ body{
     border-radius: 8px 8px 150px 8px;
 }
 
+.site-h1{
+    color: hsl(259, 100%, 65%);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'secondFont';
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .info{
     display: flex;
     gap: 1rem;
-
+    margin-top: 3rem;
 }
 
 .birth{
@@ -105,17 +114,24 @@ hr{
 
 .cal{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 2rem;
 }
 
 .detail{
+    display: flex;
     margin-top: 1rem;
+    gap: 1rem;
+    
 }
 
 .detail-span{
     display: inline-block;
     color: hsl(259, 100%, 65%);
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 .time-span{
@@ -123,7 +139,7 @@ hr{
     display: inline;
     color: hsl(0, 0%, 8%);
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 /* ======================== End Main Area ================ */
@@ -173,6 +189,14 @@ hr{
         padding: 1rem;
     }
 
+    .site-h1{
+        color: hsl(259, 100%, 65%);
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-family: 'secondFont';
+        text-align: center;
+    }
+
     .icon-btn{
         position: absolute;
         float: none;
@@ -196,6 +220,10 @@ hr{
         width: 90px;
         font-size: 16px;
         padding: 0.5rem;
+    }
+
+    .detail-span, .time-span{
+        font-size: 3rem;
     }
     
 }
